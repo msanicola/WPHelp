@@ -1,0 +1,483 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>O365 WP</title>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- .TAB PANEL NAV start from here 09/18/2018 add from top_nav.html-->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Then include bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2./js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></</script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">-->
+   
+    <!--./TAB PANEL NAV-->
+
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style5.css">
+    <link href="css/main_template.css" rel="stylesheet" type="text/css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <!-- Sidebar Header -->
+                <!--<h3>Bootstrap Sidebar</h3>-->
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>QUICK LINKS</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Tools</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Evolve 365</a>
+                        </li>
+                        <li>
+                            <a href="#">Tools 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Tools 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!--<a href="#">Related Information</a>-->
+                    <p>Related Content</p>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <!--<li>
+                    <a href="#">Contact</a>
+                </li>-->
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <img src="images/wpLogo102.png" />
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!--<h2>Collapsible Sidebar Using Bootstrap 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="line"></div>
+
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="line"></div>
+
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <div class="line"></div>
+
+    <h3>Lorem Ipsum Dolor</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
+            <!-- Main Container -->
+            <div class="container">
+                <!-- Header -->
+                <header class="header">
+                    <h4 class="logo">OFFICE 365 FOR WEST POINT</h4>
+                </header>
+
+                <!-- TAB PANEL NAV 09/18/2018-->
+                <!--<div class="row">
+    <div class="col-lg-12">
+        <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+                <ul class="nav nav-tabs">
+                    <li><a href="#tab4default" data-toggle="tab">Migration Schedule</a></li>
+                    <li class="active"><a href="#tab1default" data-toggle="tab">Setup/Access</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown">Outlook <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#tab4default" data-toggle="tab">Configuration</a></li>
+                            <li><a href="#tab5default" data-toggle="tab">Forwarding </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#tab2default" data-toggle="tab">Teams</a></li>
+                    <li><a href="#menu1" data-toggle="tab">One Drive</a></li>
+
+
+                </ul>
+            </div>-->
+                <!-- BEGIN TAB PANEL NAV 09/18/2018-->
+
+                <div class="container">
+                    <h2>Office 365 Readiness</h2>
+                    <ul class="nav nav-tabs">
+                        <!--<li class="active">--><li><a data-toggle="tab" href="#schedule">Deployment</a></li>
+                        <li><a data-toggle="tab" href="#getstarted">Get Started</a></li>
+                        <li><a data-toggle="tab" href="#setup">Setup</a></li>
+                        <li><a data-toggle="tab" href="#mobile">Mobile</a></li>
+                        <li><a data-toggle="tab" href="#commun">Communicate</a></li>
+                        <li><a data-toggle="tab" href="#share">Store and share</a></li>
+                       
+                    </ul>
+
+                    <div class="tab-content">
+                      <!--DEPLOYMENT TAB-->
+                        <!--<div id="schedule" class="tab-pane fade in active">-->
+                        <div id="schedule" class="tab-pane fade">
+                            <h3>Deployment</h3>
+                            <div class="line"></div>
+                            <p class="tag">READINESS SCHEDULE</p>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Work Streams</th>
+                                        <th>Launch</th>
+                                        <th>Post Launch</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>IT EMAIL COMMS<ul><li>Overview email to enterprise</li><li>Personalized deployment email</li></ul></td>
+                                        <td>Month DD - <br />Send overview email to enterprise<br />Month DD+1 - <br />Send personalized deployment email to phase 1a</td>
+                                        <td>Send comms according to phased schedule</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT Extranet</td>
+                                        <td>Month DD - <br />Publish Office 365 Content to IT Extranet</td>
+                                        <td>Update as necessary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>IT Readiness Kit & Briefings</td>
+                                        <td>Send memo to IT field support leadership,including deployment and comms schedule and high-level messaging</td>
+                                        <td>Share content</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--END DEPLOYMENT TAB-->
+                        <!--SETUP TAB-->
+                        <div id="setup" class="tab-pane fade">
+                            <h3>Setup</h3>
+                            <div class="line"></div>
+                            <p class="text_column">Log into <a href="www.office.com" target="_blank">www.office.com</a> with the credentials you recieved in the Welcome Email</p>
+                            <p class="text_column">The service will then walk you through setting a permanent password and configuring multi-factor authentication.</p>
+
+                            <ul class="nav nav-tabs">
+                                <!--<li class="active">-->
+                                <li class="active"><a data-toggle="tab" href="#setUpoverview">OverView</a></li>
+                                <li><a data-toggle="tab" href="#setUpresources">Additional Resources</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="setUpoverview" class="tab-pane fade active">
+                                    <p class="tag">SetUp Overview</p>
+
+                                </div>
+                                <div id="setUpresources" class="tab-pane fade">
+                                    <p class="text_column"><a href="https://support.office.com/en-us/article/employee-quick-setup-for-office-365-69cd80a8-56b8-436f-aa1f-2d2a3cc51060" target="_blank">Microsoft - Office 365 Employee Setup Guide</a></p>
+
+                                    <!--<p class="tag">SetUp Resources</p>-->
+                                </div>
+                            </div><!--./tab-content-->
+                        </div><!--./setup-->
+                        <!--- END SETUP TAB-->
+                        <!--MOBILE TAB-->
+                        <div id="mobile" class="tab-pane fade">
+                            <h3>Mobile</h3>
+                            <div class="line"></div>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                            <ul class="nav nav-tabs">
+                                <!--<li class="active">-->
+                                <li class="active"><a data-toggle="tab" href="#mobileOverview">OverView</a></li>
+                                <li><a data-toggle="tab" href="#mobileResources">Additional Resources</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="mobileOverview" class="tab-pane fade active">
+                                    <p class="tag">Mobile Overview</p>
+                                </div>
+                                <div id="mobileResources" class="tab-pane fade">
+                                    <p class="tag">Mobile Resources</p>
+                                </div>
+                            </div><!--./tab-content-->
+                        </div><!--./mobile-->
+                        <!--- END MOBILE TAB-->
+                        <!--COMMUNICATIONS TAB-->
+                        <div id="commun" class="tab-pane fade">
+                            <h3>Communications</h3>
+                            <div class="line"></div>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                            
+                            <ul class="nav nav-tabs">
+                                <!--<li class="active">-->
+                                <li class="active"><a data-toggle="tab" href="#communOverview">OverView</a></li>
+                                <li><a data-toggle="tab" href="#communResources">Additional Resources</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="communOverview" class="tab-pane fade active">
+                                    <!--<p class="tag">Communications Overview</p>-->
+                                    <p>When you are signed in to your account, you can access any of the apps and services right in the browser window. </p>
+                                    <p>You will find your email under Mail, find any appointments or meetings under Calendar, and locate contacts under People.</p>
+
+                                </div>
+                                <div id="communResources" class="tab-pane fade">
+                                    <p class="tag">Communications Resources</p>
+                                </div>
+                            </div><!--./tab-content-->
+                        </div><!--./commun-->
+                        <!--- END COMMUNICATIONS TAB-->
+
+                        <!--STORE & SHARE TAB-->
+                        <div id="share" class="tab-pane fade">
+                            <h3>Store & Share</h3>
+                            <div class="line"></div>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <ul class="nav nav-tabs">
+                                <!--<li class="active">-->
+                                <li class="active"><a data-toggle="tab" href="#shareOverview">OverView</a></li>
+                                <li><a data-toggle="tab" href="#shareResources">Additional Resources</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="shareOverview" class="tab-pane fade active">
+                                    <p>Access to OneDrive for Business, where you can store your work files and access them from your computer, mobile phone, or tablet.</p>
+                                </div>
+                                <div id="shareResources" class="tab-pane fade">
+                                    <p class="tag">Store & Share  Resources</p>
+                                </div>
+                            </div><!--./tab-content-->
+                        </div><!--./share-->
+                        <!--- END STORE & SHARE TAB-->
+
+                        <!--GET STARTED TAB-->
+                        <div id="getstarted" class="tab-pane fade">
+                            <h3>Get Started</h3>
+                            <div class="line"></div>
+                            <p class="tags">What is Office 365?</p>
+                            <p>Office 365 is a subscription cloud-based software that includes office applications and services.</p>
+                            <p>Office 365 will enable you to: Access files and documents, Share documents, and Collaborate with colleagues from wherever you are.</p>
+                            <p>Whether you work on a PC, Mac, tablet or phone, you will have a consistent experience across all of your devices</p>
+                            <div class="line"></div>
+                            <ul class="nav nav-tabs">
+                                <!--<li class="active">-->
+                                <li class="active"><a data-toggle="tab" href="#O365Overview">OverView</a></li>
+                                <li><a data-toggle="tab" href="#O365resources">Additional Resources</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="O365Overview" class="tab-pane fade active">
+                                    <p class="tag">Office Apps</p>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Office apps for PC and Mac</td>
+                                                <td>The latest versions of Word, Excel, PowerPoint, Outlook, OneNote, Publisher (PC only), OneDrive for Business, and Access (PC only).</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Office apps for tablets and phones</td>
+                                                <td>Office 365 mobile apps (Word, Excel, PowerPoint, and OneDrive for Business, Skype for Business, Yammer, and OneNote) installed on up to 5 PCs or Macs, 5 tablets, and 5 phones per user.</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <p class="tag">Online Services</p>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td>Office Online</td>
+                                                <td>Online versions of Word, OneNote, PowerPoint, and Excel, accessible from any browser with Office Online.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Interactive reporting and storytelling</td>
+                                                <td>Creation and sharing of interactive reports, presentations, and personal stories with Sway.</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div><!--./O365Overview-->
+                                <div id="O365resources" class="tab-pane fade">
+                                    <p class="tag"><a href="content/Be-productive-anywhere-with-O365.pdf" target="_blank"><small>Be Productive Anywhere with O365</small></a></p>
+                                    <p class="tag"><a href="https://products.office.com/en-us/business/office-365-roadmap"><small>Office 365 RoadMap</small></a></p>
+                                </div><!--./O365 Resources-->
+                            </div><!--./tab-content-->
+                            <!--END GET STARTED TAB-->
+
+                        </div>
+
+                    </div>
+
+
+                <!-- END TAB PANEL NAV 09/18/2018-->
+                <!-- Hero Section -->
+                <!--<section class="intro">-->
+                <!--<div class="column">-->
+                    <!--<h3>WHAT IS OFFICE 365?</h3>-->
+                    <!--<img src="images/profile.png" alt="" class="profile"> </div>-->
+                    <!--<img src="images/office365_profile.png" alt="" class="profile">-->
+
+                <!--</div>-->
+                <!--<div class="column">-->
+                    <!--<p>Office 365 is a cloud-based service from Microsoft.  Office 365 will enable you to: Access files and documents, Share documents, and Collaborate with colleagues from wherever you are.</p>-->
+                    <!--<p>Whether you work on a PC, Mac, tablet or phone, you will have a consistent experience across all of your devices</p>-->
+                    <!--<p><a href="content/Be-productive-anywhere-with-O365.pdf" target="_blank">Read more...</a></p>-->
+                    <!--<p><a href="#"></a></p>-->
+                <!--</div>-->
+
+                <!--</section>-->
+
+
+
+                <!-- Starts Gallery Section -->
+                <div class="gallery">
+                     <div class="thumbnail">
+                        <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+                        <h4>TOPIC 1</h4>
+                        <p class="tag">Mobile,Share,Communicate</p>
+                        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                     <div class="thumbnail">
+                         <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+                         <h4>RESOURCES</h4>
+                         <p class="tag"><a href="https://westpoint.o365support.com/">Evolve 365 Portal</a></p>
+                         <!--class="text_column"-->
+                         <p>Evolve 365 is a Planet Technologies service that offers on demand self-help training with thousands of easily searchable videos and regularly updated content.</p>
+                      </div>
+
+                    <div class="thumbnail">
+                        <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+                        <h4>SOFTWARE</h4>
+                        <p class="tag">Mobile,Share,Communicate</p>
+                        <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                    </div>
+
+                </div>
+                <!--<div class="gallery">
+        <div class="thumbnail">
+            <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+            <h4>TITLE</h4>
+            <p class="tag">HTML, CSS, JS, WordPress</p>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="thumbnail">
+            <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+            <h4>TITLE</h4>
+            <p class="tag">HTML, CSS, JS, WordPress</p>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="thumbnail">
+            <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+            <h4>TITLE</h4>
+            <p class="tag">HTML, CSS, JS, WordPress</p>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="thumbnail">
+            <a href="#"><img src="images/bkg_06.jpg" alt="" width="2000" class="cards" /></a>
+            <h4>TITLE</h4>
+            <p class="tag">HTML, CSS, JS, WordPress</p>
+            <p class="text_column">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>-->
+                <!--./gallery-->
+
+            </div><!--./main container-->
+
+
+
+                        </div>
+                </div>
+
+                <!-- jQuery CDN - Slim version (=without AJAX) -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <!-- Popper.JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+                <!-- Bootstrap JS -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('#sidebarCollapse').on('click', function () {
+                            $('#sidebar').toggleClass('active');
+                            $(this).toggleClass('active');
+                        });
+                    });
+                </script>
+</body>
+
+</html>
